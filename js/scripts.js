@@ -56,7 +56,7 @@
 })(jQuery); // End of use strict
 
 var w = c.width = window.innerWidth,
-    h = c.height = window.innerHeight,
+    h = c.height = window.innerHeight + 80,
     ctx = c.getContext( '2d' ),
     
     minDist = 20,
@@ -215,7 +215,7 @@ anim();
 window.addEventListener( 'resize', function() {
   
   w = c.width = window.innerWidth;
-  h = c.height = window.innerHeight;
+  h = c.height = window.innerHeight + 80;
   starter.x = w / 2;
   starter.y = h / 2;
   
