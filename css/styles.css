@@ -470,7 +470,7 @@ mark,
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {
@@ -10219,7 +10219,7 @@ header.masthead .masthead-heading {
 #portfolio .portfolio-item .portfolio-caption {
   padding: 1.5rem;
   text-align: center;
-  background-color: #fff;
+  background-color: #888888;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
@@ -10518,7 +10518,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 canvas {
-  
   position: absolute;
   top: 0;
   left: 0;

@@ -59,12 +59,12 @@ var w = c.width = window.innerWidth,
     h = c.height = window.innerHeight,
     ctx = c.getContext( '2d' ),
     
-    minDist = 10,
+    minDist = 20,
     maxDist = 30,
     initialWidth = 10,
     maxLines = 100,
     initialLines = 4,
-    speed = 5,
+    speed = 3,
     
     lines = [],
     frame = 0,
@@ -106,7 +106,7 @@ function init() {
 }
 function getColor( x ) {
   
-  return 'hsl( hue, 80%, 50% )'.replace(
+  return 'hsl( hue, 40%, 25% )'.replace(
     'hue', x / w * 360 + frame
   );
 }
