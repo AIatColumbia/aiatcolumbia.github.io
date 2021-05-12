@@ -487,6 +487,11 @@ mark,
   height: auto;
 }
 
+.img-icon {
+  max-width: 100%;
+  height: auto;
+}
+
 .figure {
   display: inline-block;
 }
@@ -10456,6 +10461,13 @@ header.masthead .masthead-heading {
 
 .img-brand {
   height: 2.75rem;
+}
+
+section#applications {
+  background-color: #212529;
+  background-image: url("../assets/img/map-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 section#contact {
