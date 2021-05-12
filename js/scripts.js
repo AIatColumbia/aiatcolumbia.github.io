@@ -98,7 +98,7 @@ function init() {
   for( var i = 0; i < initialLines; ++i )
     lines.push( new Line( starter ) );
   
-  ctx.fillStyle = '#222';
+  ctx.fillStyle = '#111';
   ctx.fillRect( 0, 0, w, h );
   
   // if you want a cookie ;)
@@ -106,7 +106,7 @@ function init() {
 }
 function getColor( x ) {
   
-  return 'hsl( hue, 40%, 25% )'.replace(
+  return 'hsl( hue, 60%, 42% )'.replace(
     'hue', x / w * 360 + frame
   );
 }
@@ -117,7 +117,7 @@ function anim() {
   ++frame;
   
   ctx.shadowBlur = 0;
-  ctx.fillStyle = 'rgba(0,0,0,.02)';
+  ctx.fillStyle = 'rgba(0,0,0,0.06)';
   ctx.fillRect( 0, 0, w, h );
   ctx.shadowBlur = .5;
   
@@ -141,10 +141,10 @@ function anim() {
     lines.push( new Line( starter ) );
     
     // cover the middle;
-    ctx.fillStyle = ctx.shadowColor = getColor( starter.x );
-    ctx.beginPath();
-    ctx.arc( starter.x, starter.y, initialWidth, 0, Math.PI * 2 );
-    ctx.fill();
+    //ctx.fillStyle = ctx.shadowColor = getColor( starter.x );
+    //ctx.beginPath();
+    //ctx.arc( starter.x, starter.y, initialWidth, 0, Math.PI * 2 );
+    //ctx.fill();
   }
 }
 
