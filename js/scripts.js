@@ -56,11 +56,11 @@
 })(jQuery); // End of use strict
 
 var w = c.width = window.innerWidth,
-    h = c.height = (window.innerHeight < 660 ? 660 : (window.innerHeight > 720 ? 720 : window.innerHeight)),
+    h = c.height = (window.innerHeight < 660 ? 660 : (window.innerHeight > 820 ? 820 : window.innerHeight)),
     ctx = c.getContext( '2d' ),
     
     minDist = 20,
-    maxDist = 40,
+    maxDist = 60,
     initialWidth = 10,
     maxLines = 80,
     initialLines = 3,
@@ -98,7 +98,7 @@ function init() {
   for( var i = 0; i < initialLines; ++i )
     lines.push( new Line( starter ) );
   
-  ctx.fillStyle = '#111';
+  ctx.fillStyle = '#222';
   ctx.fillRect( 0, 0, w, h );
   
   // if you want a cookie ;)
@@ -106,7 +106,7 @@ function init() {
 }
 function getColor( x ) {
   
-  return 'hsl( hue, 60%, 42% )'.replace(
+  return 'hsl( hue, 80%, 25% )'.replace(
     'hue', x / w * 360 + frame
   );
 }
@@ -117,7 +117,7 @@ function anim() {
   ++frame;
   
   ctx.shadowBlur = 0;
-  ctx.fillStyle = 'rgba(0,0,0,0.06)';
+  ctx.fillStyle = 'rgba(0,0,0,0.08)';
   ctx.fillRect( 0, 0, w, h );
   ctx.shadowBlur = .5;
   
@@ -215,9 +215,10 @@ anim();
 window.addEventListener( 'resize', function() {
   
   w = c.width = window.innerWidth;
-  h = c.height = (window.innerHeight < 660 ? 660 : (window.innerHeight > 720 ? 720 : window.innerHeight));
+  h = c.height = (window.innerHeight < 660 ? 660 : (window.innerHeight > 820 ? 820 : window.innerHeight));
   starter.x = w / 2;
   starter.y = h / 2;
-  
+  ctx.fillStyle = '#222';
+  ctx.fillRect( 0, 0, w, h );
   // init();
 } )
