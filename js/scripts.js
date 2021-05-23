@@ -106,7 +106,7 @@ function init() {
 }
 function getColor( x ) {
   
-  return 'hsl( hue, 80%, 25% )'.replace(
+  return 'hsl( hue, 100%, 40% )'.replace(
     'hue', x / w * 360 + frame
   );
 }
