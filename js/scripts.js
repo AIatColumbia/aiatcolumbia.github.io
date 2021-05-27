@@ -55,7 +55,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
 var w = c.width = window.innerWidth,
-    h = window.innerHeight; // c.height = (window.innerHeight < 8 ? 770 : (window.innerHeight > 820 ? 820 : window.innerHeight)),
+    h = c.height = window.innerHeight, //(window.innerHeight < 820 ? 820 : (window.innerHeight > 820 ? 820 : window.innerHeight)),
     ctx = c.getContext( '2d' ),
     
     minDist = 20,
@@ -214,7 +214,7 @@ anim();
 window.addEventListener( 'resize', function() {
   
   w = c.width = window.innerWidth;
-  h = c.height = window.innerHeight; //(window.innerHeight < 770 ? 770 : (window.innerHeight > 820 ? 820 : window.innerHeight));
+  h = c.height = window.innerHeight;//(window.innerHeight < 770 ? 770 : (window.innerHeight > 820 ? 820 : window.innerHeight));
   starter.x = w / 2;
   starter.y = h / 2;
   ctx.fillStyle = '#080808';
