@@ -1,59 +1,58 @@
 /*!
-* Start Bootstrap - Agency v6.0.5 (https://startbootstrap.com/theme/agency)
+* Start Bootstrap - Agency v7.0.0 (https://startbootstrap.com/theme/agency)
 * Copyright 2013-2021 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
 */
-(function ($) {
-    "use strict"; // Start of use strict
+//
+// Scripts
+// 
 
-    // Smooth scrolling using anime.js
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on('click', function () {
-        if (
-            location.pathname.replace(/^\//, "") ==
-            this.pathname.replace(/^\//, "") &&
-            location.hostname == this.hostname
-        ) {
-            var target = $(this.hash);
-            target = target.length ?
-                target :
-                $("[name=" + this.hash.slice(1) + "]");
-            if (target.length) {
-                anime({
-                    targets: 'html, body',
-                    scrollTop: target.offset().top - 72,
-                    duration: 1000,
-                    easing: 'easeInOutExpo'
-                });
-                return false;
-            }
+window.addEventListener('DOMContentLoaded', event => {
+
+    // Navbar shrink function
+    var navbarShrink = function () {
+        const navbarCollapsible = document.body.querySelector('#mainNav');
+        if (!navbarCollapsible) {
+            return;
         }
-    });
-
-    // Closes responsive menu when a scroll trigger link is clicked
-    $(".js-scroll-trigger").on('click', function () {
-        $(".navbar-collapse").collapse("hide");
-    });
-
-    // Activate scrollspy to add active class to navbar items on scroll
-    $("body").scrollspy({
-        target: "#mainNav",
-        offset: 74,
-    });
-
-    // Collapse Navbar
-    var navbarCollapse = function () {
-        if ($("#mainNav").offset().top > 100) {
-            $("#mainNav").addClass("navbar-shrink");
+        if (window.scrollY === 0) {
+            navbarCollapsible.classList.remove('navbar-shrink')
         } else {
-            $("#mainNav").removeClass("navbar-shrink");
+            navbarCollapsible.classList.add('navbar-shrink')
         }
-    };
-    // Collapse now if page is not at top
-    navbarCollapse();
-    // Collapse the navbar when page is scrolled
-    $(window).on('scroll', navbarCollapse);
 
-})(jQuery); // End of use strict
+    };
+
+    // Shrink the navbar 
+    navbarShrink();
+
+    // Shrink the navbar when page is scrolled
+    document.addEventListener('scroll', navbarShrink);
+
+    // Activate Bootstrap scrollspy on the main nav element
+    const mainNav = document.body.querySelector('#mainNav');
+    if (mainNav) {
+        new bootstrap.ScrollSpy(document.body, {
+            target: '#mainNav',
+            offset: 74,
+        });
+    };
+
+    // Collapse responsive navbar when toggler is visible
+    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const responsiveNavItems = [].slice.call(
+        document.querySelectorAll('#navbarResponsive .nav-link')
+    );
+    responsiveNavItems.map(function (responsiveNavItem) {
+        responsiveNavItem.addEventListener('click', () => {
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                navbarToggler.click();
+            }
+        });
+    });
+
+});
+
 
 var w = c.width = window.innerWidth,
     h = c.height = (window.innerHeight < 770 ? 770 : (window.innerHeight > 820 ? 820 : window.innerHeight)),
@@ -62,7 +61,7 @@ var w = c.width = window.innerWidth,
     minDist = 20,
     maxDist = 60,
     initialWidth = 10,
-    maxLines = 80,
+    maxLines = 40,
     initialLines = 3,
     speed = 3,
     
@@ -98,7 +97,7 @@ function init() {
   for( var i = 0; i < initialLines; ++i )
     lines.push( new Line( starter ) );
   
-  ctx.fillStyle = '#222';
+  ctx.fillStyle = '#080808';
   ctx.fillRect( 0, 0, w, h );
   
   // if you want a cookie ;)
@@ -106,7 +105,7 @@ function init() {
 }
 function getColor( x ) {
   
-  return 'hsl( hue, 100%, 40% )'.replace(
+  return 'hsl( hue, 80%, 50% )'.replace(
     'hue', x / w * 360 + frame
   );
 }
@@ -117,7 +116,7 @@ function anim() {
   ++frame;
   
   ctx.shadowBlur = 0;
-  ctx.fillStyle = 'rgba(0,0,0,0.08)';
+  ctx.fillStyle = 'rgba(0,0,0,0.1)';
   ctx.fillRect( 0, 0, w, h );
   ctx.shadowBlur = .5;
   
@@ -218,7 +217,7 @@ window.addEventListener( 'resize', function() {
   h = c.height = (window.innerHeight < 770 ? 770 : (window.innerHeight > 820 ? 820 : window.innerHeight));
   starter.x = w / 2;
   starter.y = h / 2;
-  ctx.fillStyle = '#222';
+  ctx.fillStyle = '#080808';
   ctx.fillRect( 0, 0, w, h );
   // init();
 } )

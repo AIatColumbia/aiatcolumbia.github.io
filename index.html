@@ -2,12 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>AI@Columbia</title>
+        <title>Agency - Start Bootstrap Theme</title>
+        <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
@@ -21,13 +20,13 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/logos/navbar-logo.png" alt="..." /></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
-                    <i class="fas fa-bars ml-1"></i>
+                    <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ml-auto">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#subsribe">Subscribe</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#applications">Applications</a></li>
@@ -38,29 +37,22 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <!-- <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
-            </div>
-        </header> -->
         <canvas id=c></canvas>
         <!-- Subscribe -->
-        <section class="page-section bg-light" id="subsribe" >
+        <section class="page-section bg-transparent" id="subsribe" >
             <div class="container" style="position: relative; margin: auto;">
-                <img class="img-fluid" style="min-width: 240px; max-width: 40%; width:340px; height: auto; display: block; margin-left: auto; margin-right: auto; margin-top: 2%; margin-bottom: 1%" src="assets/img/logos/aicolumbia_logo.png">
+                <img class="img-fluid" style="min-width: 240px; max-width: 40%; width:340px; height: auto; display: block; margin-left: auto; margin-right: auto;" src="assets/img/logos/aicolumbia_logo.png">
                 <!-- <form >
                   <input name="email" type="email" placeholder="Email" required>
                   <button type="submit">Send</button>
                 </form> -->
                 <div style="margin-bottom: 40px">
                     <center>
-                    	<p style="color: #dddddd">A community of Artificial Intelligence enthusiasts at Columbia. </p>
-                	</center>
+                        <p style="color: #dddddd">A community of Artificial Intelligence enthusiasts at Columbia. </p>
+                    </center>
                 </div>
 
-                <div style="background-color: #222222; opacity: 90%; padding: 32px; margin: auto; max-width: 700px">
+                <div style="background-color: rgba(16, 16, 16, 0.75); padding: 32px; margin: auto; max-width: 700px">
                     <div class="text-center">
                         <h6 class="section-heading text-uppercase" style="color: #ffffff">Subscribe to our Newsletter</h6>
                         <p class="section-subheading text-muted" style="color: #dddddd">Get updates on events, opportunities, projects, & deadlines - fresh from the oven!</p>
@@ -121,8 +113,8 @@
             </div>
         </section>
         <!-- About-->
-        <section class="page-section bg-light" id="about" style="padding-bottom: 0rem">
-            <div class="container">
+        <section class="page-section" id="about">
+            <div class="container" style="background-color: rgba(32,32,32,0.6); padding: 4%; padding-right: 5%; padding-left: 5%;">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">About</h2>
                     <p>AI@Columbia is a chapter of AI@X, a growing community of students passionate about AI across the USA with branches currently at the University of Pennsylvania and Columbia University</p>
@@ -133,90 +125,46 @@
                 </div>
             </div>
         </section>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-dark" id="portfolio" style="padding-top: 1.5rem">
-            <div class="container">
-                <!-- <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div> -->
-
+        <!-- Services-->
+        <section class="page-section" id="objectives">
+            <div class="container" style="background-color: rgba(32,32,32,0.6); padding: 4%; padding-right: 5%; padding-left: 5%;">
                 <div class="text-center">
-                    <h4 style="color: #ffffff">The following are our three objectives:</h4>
-                    <br>
+                    <h2 class="section-heading text-uppercase">Our Objectives</h2>
                 </div>
-
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <div style="padding: 20%">
-                                    <img class="img-fluid img-icon" src="assets/img/portfolio/events.png" alt="..." />
-                                </div>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Events</div>
-                                <div class="portfolio-caption-subheading">AIHacks, Panels, and Talks</div>
-                            </div>
-                        </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Events</h4>
+                        <p></p>
+                        <p class="text-muted" align="justify">Designed to expose undergraduates to the rapidly growing field of Artifical Intelligence, we host leading global AI specialists at our speaker series, ranging from top professionals at Fortune 100 firms to entrepreneurs driving cutting edge innovation. We give undergraduates exposure to both technical and business opportunities in AI.</p>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <div style="padding: 20%">
-                                    <img class="img-fluid" src="assets/img/portfolio/recruitment.png" alt="..." />
-                                </div>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Recruitment</div>
-                                <div class="portfolio-caption-subheading">Projects, Internships, and Funding</div>
-                            </div>
-                        </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Recruitment</h4>
+                        <p class="text-muted" align="justify">We navigate students through recruiting for AI companies and opportunities using a pipeline that connects potential candidates to exclusive internships and full time positions, while mentoring them along the way. We hold an undergraduate recruiting circle, allowing them to network with leading firms.</p>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <div style="padding: 20%">
-                                    <img class="img-fluid" src="assets/img/portfolio/education.png" alt="..." />
-                                </div>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Education</div>
-                                <div class="portfolio-caption-subheading">Bootcamps, Projects, and Research</div>
-                            </div>
-                        </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Education</h4>
+                        <p class="text-muted" align="justify">As an organization, we seek to lower the barriers for undergraduates entering the fields of Artificial Intelligence and Machine Learning. Every semester, we host a biweekly education series focused on teaching state of the art AI models, while exploring applications in many industries ranging from Finance to Self-Driving Cars.</p>
                     </div>
-                    
                 </div>
             </div>
         </section>
+    
 
-        <section class="page-section" style="padding: 0.4rem"></section>
-
-        <!-- Applications -->
-        <section class="page-section bg-dark" id="applications">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase" style="color: #fed136">Applications</h2>
-                    <p class="section-subheading" style="color:#FFFFFF">We're accepting new members - apply for General Member positions and Board Member positions by June 1!</p>
-                    <br>
-                    <img src="assets/img/recruitment.png" style="width: 100%; max-width: 650px">
-                </div>
-            </div>
-        </section>
-        
         <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container">
+        <section class="page-section bg-transparent" id="team">
+            <div class="container"  style="background-color: rgba(32,32,32,0.6); padding: 4%; padding-right: 5%; padding-left: 5%;">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
                     <h3 class="section-subheading text-muted">We're always looking for people to join us!</h3>
@@ -227,9 +175,7 @@
                             <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
                             <h4>Riyaan Bakhda</h4>
                             <p class="text-muted">President</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            <p class="team-member-bio" align="justify">Riyaan is an undergraduate studying Computer Science at Columbia. He has previously worked with numerous Machine Learning, Computer Vision, and Robotics projects, which have won accolades at National and International platforms. These projects range from a Machine Learning based Landslide Detection Prototype to a research in self-assembling Modular Robots. In classic geek fashion, you often find him doing math or physics when he’s not coding away.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -237,9 +183,8 @@
                             <img class="mx-auto rounded-circle" src="assets/img/team/5.jpg" alt="..." />
                             <h4>Sanchita Jalan</h4>
                             <p class="text-muted">VP</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            <p class="team-member-bio" align="justify">Sanchita is a third year undergraduate student at Columbia double majoring in Economics and Computer Science. She is particularly interested in the intersection posited by the two subjects within finance and has consequently partaken in research and projects pertaining to cryptocurrencies, venture capital and sustainability. A competitive dancer and an avid reader too, so find her on campus teaching herself new choreography or learning about Cicero!
+</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -247,9 +192,7 @@
                             <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
                             <h4>Hugo Hamilton</h4>
                             <p class="text-muted">VP of Events</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            <p class="team-member-bio" align="justify">Hugo is an undergraduate from Stockholm, Sweden, studying Computer Science and Mathematics at Columbia. He has previously worked on projects in computational biology, genetics, and climate modeling. When he is not coding or writing proofs, Hugo plays soccer for the Columbia Men’s Soccer team.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -257,9 +200,7 @@
                             <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
                             <h4>Nirvaan Iyer</h4>
                             <p class="text-muted">VP of Marketing</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            <p class="team-member-bio" align="justify"></p>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -267,15 +208,12 @@
                             <img class="mx-auto rounded-circle" src="assets/img/team/4.jpg" alt="..." />
                             <h4>Thomas Bueler</h4>
                             <p class="text-muted">VP of Education</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                            <p class="team-member-bio" align="justify">Thomas is a rising sophomore in Columbia College from Fairbanks, Alaska. He plans to major in Computer Science and Art History and upon graduation plans to go to law school. He has previously worked on machine learning projects including natural language translation. He has also received fellowships to study and model tsunamis. When Thomas is not skiing in the frozen Arctic, he loves to read.</p>
+</p>                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
@@ -337,49 +275,33 @@
                 </div>
             </div>
         </footer>
-        <!-- Portfolio Modals-->
-        <!-- Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Events</h2>
-                                    <p class="item-intro text-muted">AIHacks, Panels, and Talks</p>
-                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/events.png" alt="..." style="max-width: 200px" />
-                                    <p>Designed to expose undergraduates to the rapidly growing field of Artifical Intelligence, we host leading global AI specialists at our speaker series, ranging from top professionals at Fortune 100 firms to entrepreneurs driving cutting edge innovation. We give undergraduates exposure to both technical and business opportunities within AI.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 2-->
+        <!-- Portfolio item 2 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Recruitment</h2>
-                                    <p class="item-intro text-muted">Projects, Internships, and Funding</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/recruitment.png" alt="..." style="max-width: 200px" />
-                                    <p>We navigate students through recruiting for AI companies and opportunities using a pipeline that connects potential candidates to exclusive internships and full time positions, while mentoring them along the way. We hold an undergraduate recruiting circle, allowing them to network with leading firms.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Explore
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Graphic Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
                                     </button>
                                 </div>
                             </div>
@@ -388,23 +310,138 @@
                 </div>
             </div>
         </div>
-        <!-- Modal 3-->
+        <!-- Portfolio item 3 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Education</h2>
-                                    <p class="item-intro text-muted">Bootcamps, Projects, and Research</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/education.png" alt="..." style="max-width: 200px" />
-                                    <p>As an organization, we seek to lower the barriers for undergraduates entering the fields of Artificial Intelligence and Machine Learning. Every semester, we host a biweekly education series focused on teaching state of the art AI models, while exploring their applications in a host of industries ranging from Finance to Self-Driving Cars.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Finish
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Identity
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Lines
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Branding
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Southwest
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Website Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Window
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Photography
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
                                     </button>
                                 </div>
                             </div>
@@ -414,13 +451,7 @@
             </div>
         </div>
         <!-- Bootstrap core JS-->
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
