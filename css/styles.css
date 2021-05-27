@@ -7448,6 +7448,11 @@ textarea.form-control-lg {
   background-color: transparent !important;
 }
 
+.bg-container {
+  background-color: rgba(32,32,32,0.6); padding: 4%; padding-right: 5%; padding-left: 5%;
+  border-radius: 2%;
+}
+
 .bg-gradient {
   background-image: var(--bs-gradient) !important;
 }
