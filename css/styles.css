@@ -7450,7 +7450,9 @@ textarea.form-control-lg {
 
 .bg-container {
   background-color: rgba(32,32,32,0.6); padding: 4%; padding-right: 5%; padding-left: 5%;
-  border-radius: 2%;
+  border-radius: 4%;
+  /*margin-left: min(auto, 32px);
+  margin-right: min(auto, 32px);*/
 }
 
 .bg-gradient {
@@ -11291,10 +11293,10 @@ header.masthead .masthead-heading {
 }
 
 section#contact {
-  background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  /*background-color: #212529;*/
+  /*background-image: url("../assets/img/map-image.png");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: center;*/
 }
 section#contact .section-heading {
   color: #fff;

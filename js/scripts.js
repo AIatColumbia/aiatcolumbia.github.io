@@ -9,6 +9,10 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
+
+
+      
+
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -52,6 +56,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
 
 
 var w = c.width = window.innerWidth,
@@ -102,6 +107,8 @@ function init() {
   
   // if you want a cookie ;)
   // ctx.lineCap = 'round';
+
+  
 }
 function getColor( x ) {
   
