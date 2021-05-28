@@ -11275,7 +11275,8 @@ header.masthead .masthead-heading {
   height: 90%;
   margin-bottom: 6rem;
   text-align: center;
-  background-color: rgba(255, 200, 0, 0.2);
+  /*background-color: rgba(255, 200, 0, 0.2);*/
+  background-color: rgba(160, 160, 160, 0.2);
   border-radius: 2%;
   padding: 4%;
 }
