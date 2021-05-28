@@ -9,9 +9,13 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
+      // var maxHeight = 0;
 
+      // $(".team-member").each(function()
+      //    if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+      // });
 
-      
+      // $(".team-member").height(maxHeight);
 
     // Navbar shrink function
     var navbarShrink = function () {
@@ -56,8 +60,6 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
-
-
 
 var w = c.width = window.innerWidth,
     h = c.height = window.innerHeight, //(window.innerHeight < 820 ? 820 : (window.innerHeight > 820 ? 820 : window.innerHeight)),
